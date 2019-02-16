@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qinzhengchao.github.io/"/>
-  <updated>2019-02-16T02:51:08.672Z</updated>
+  <updated>2019-02-16T10:26:20.513Z</updated>
   <id>http://qinzhengchao.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://qinzhengchao.github.io/2019/02/15/the-first-passage/"/>
     <id>http://qinzhengchao.github.io/2019/02/15/the-first-passage/</id>
     <published>2019-02-15T14:21:29.000Z</published>
-    <updated>2019-02-16T02:51:08.672Z</updated>
+    <updated>2019-02-16T10:26:20.513Z</updated>
     
-    <content type="html"><![CDATA[<p>this the first passage of HEXO<br>SEVO 实验室<br><a id="more"></a><br>从放假开始到现在进行了软件及硬件的学习，在这个过程中收获了很多，从硬件方面来说，从最开始的画元器件的原理图，到后来按照学长给的电驱原理图画属于自己的PCB，当然也遇到了很多的问题，在使用AD18的过程中，逐步学会了如何从已有的PCB中导出元件库，重新定义PCB shape尺寸，同时向实验室的其他同学请教，了解了更多AD18的快捷键组合，知道了如何进行原理图和PCB的交互，很大程度上提高了画板子的效率。当然，现在学习的内容还是非常的基础，开学之后还需要学习更多的知识。<br>软件方面的话，进入实验室之后才发现，在做智能车的时候所用到的知识确实的非常的基础，假期开始从新建工程开始，了解了如何选择启动文件，知道了包含文件的名称及次序。<br>下面是我对串口通信的理解（参考《零死角玩转STM32》）<br>串口通信数据信号由发送设备的TXD接口传输到接收设备的RXD接口，二者之间要约定好波特率，常见的波特率为4800，9600，115200.有效数据的长度通常被约定为5，6，7，8位长。USART支持使用DMA，实现高速数据通信，假期任务四中就有DMA多通道采集电压，但是我不太能看懂USART功能框图，TX功能引脚是发送数据输出引脚，RX引脚是接收数据输出引脚，在正点原子的教程中了解SCLK引脚在后期可能会用到，现在应用范围较窄。</p>]]></content>
+    <content type="html"><![CDATA[<p>this is the first passage of HEXO<br>SEVO 实验室<br><a id="more"></a><br>从放假开始到现在进行了软件及硬件的学习，在这个过程中收获了很多，从硬件方面来说，从最开始的画元器件的原理图，到后来按照学长给的电驱原理图画属于自己的PCB，当然也遇到了很多的问题，在使用AD18的过程中，逐步学会了如何从已有的PCB中导出元件库，重新定义PCB shape尺寸，同时向实验室的其他同学请教，了解了更多AD18的快捷键组合，知道了如何进行原理图和PCB的交互，很大程度上提高了画板子的效率。当然，现在学习的内容还是非常的基础，开学之后还需要学习更多的知识。<br>软件方面的话，进入实验室之后才发现，在做智能车的时候所用到的知识确实的非常的基础，假期开始从新建工程开始，了解了如何选择启动文件，知道了包含文件的名称及次序。<br>下面是我对串口通信的理解（参考《零死角玩转STM32》）<br>串口通信数据信号由发送设备的TXD接口传输到接收设备的RXD接口，二者之间要约定好波特率，常见的波特率为4800，9600，115200.有效数据的长度通常被约定为5，6，7，8位长。USART支持使用DMA，实现高速数据通信，假期任务四中就有DMA多通道采集电压，但是我不太能看懂USART功能框图，TX功能引脚是发送数据输出引脚，RX引脚是接收数据输出引脚，在正点原子的教程中了解SCLK引脚在后期可能会用到，现在应用范围较窄。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;this the first passage of HEXO&lt;br&gt;SEVO 实验室&lt;br&gt;
+      &lt;p&gt;this is the first passage of HEXO&lt;br&gt;SEVO 实验室&lt;br&gt;
     
     </summary>
     
