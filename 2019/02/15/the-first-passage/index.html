@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>the first passage | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this is the first passage of HEXOSEVO 实验室">
+<meta property="og:type" content="article">
+<meta property="og:title" content="the first passage">
+<meta property="og:url" content="http://qinzhengchao.github.io/2019/02/15/the-first-passage/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="this is the first passage of HEXOSEVO 实验室">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-17T05:27:01.600Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="the first passage">
+<meta name="twitter:description" content="this is the first passage of HEXOSEVO 实验室">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://qinzhengchao.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-the-first-passage" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/15/the-first-passage/" class="article-date">
+  <time datetime="2019-02-15T14:21:29.000Z" itemprop="datePublished">2019-02-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      the first passage
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>this is the first passage of HEXO<br>SEVO 实验室<br><a id="more"></a></p>
+<h1 id="近期学习总结"><a href="#近期学习总结" class="headerlink" title="近期学习总结"></a><strong>近期学习总结</strong></h1><p>从放假开始到现在进行了软件及硬件的学习，在这个过程中收获了很多</p>
+<h3 id="硬件方面"><a href="#硬件方面" class="headerlink" title="硬件方面"></a><strong>硬件方面</strong></h3><p>从最开始的画元器件的原理图，到后来按照学长给的电驱原理图画属于自己的PCB，当然也遇到了很多的问题，在使用AD18的过程中，逐步学会了如何从已有的PCB中导出元件库，重新定义PCB shape尺寸，同时向实验室的其他同学请教，了解了更多AD18的快捷键组合，知道了如何进行原理图和PCB的交互，很大程度上提高了画板子的效率。当然，现在学习的内容还是非常的基础，开学之后还需要学习更多的知识。</p>
+<h3 id="软件方面"><a href="#软件方面" class="headerlink" title="软件方面"></a><strong>软件方面</strong></h3><p>进入实验室之后才发现，在做智能车的时候所用到的知识确实的非常的基础，假期开始从新建工程开始，了解了如何选择启动文件，知道了包含文件的名称及次序。</p>
+<h2 id="下面是我对串口通信的理解（参考《零死角玩转STM32》）"><a href="#下面是我对串口通信的理解（参考《零死角玩转STM32》）" class="headerlink" title="下面是我对串口通信的理解（参考《零死角玩转STM32》）"></a><strong>下面是我对串口通信的理解（参考《零死角玩转STM32》）</strong></h2><p>串口通信数据信号由发送设备的TXD接口传输到接收设备的RXD接口，二者之间要约定好波特率，常见的波特率为4800，9600，115200.有效数据的长度通常被约定为5，6，7，8位长。USART支持使用DMA，实现高速数据通信，假期任务四中就有DMA多通道采集电压，但是我不太能看懂USART功能框图，TX功能引脚是发送数据输出引脚，RX引脚是接收数据输出引脚，在正点原子的教程中了解SCLK引脚在后期可能会用到，现在应用范围较窄。（其他的引脚及其功能在trello中有详细的说明）</p>
+<h3 id="串口通讯协议简介"><a href="#串口通讯协议简介" class="headerlink" title="串口通讯协议简介"></a>串口通讯协议简介</h3><p>串口通讯(Serial Communication)是一种设备间非常常用的串行通讯方式，因为它简单便捷，因此大部分电子设备都支持该通讯方式，电子工程师在调试设备时也经常使用该通讯方式输出调试信息。<br>在计算机科学里，大部分复杂的问题都可以通过分层来简化。如芯片被分为内核层和<br>片上外设；STM32 标准库则是在寄存器与用户代码之间的软件层。对于通讯协议，我们也以分层的方式来理解，最基本的是把它分为物理层和协议层。物理层规定通讯系统中具有机械、电子功能部分的特性，确保原始数据在物理媒体的传输。协议层主要规定通讯逻辑，统一收发双方的数据打包、解包标准。简单来说物理层规定我们用嘴巴还是用肢体来交流，协议层则规定我们用中文还是英文来交流</p>
+<h3 id="USART-初始化结构体详解"><a href="#USART-初始化结构体详解" class="headerlink" title="USART 初始化结构体详解"></a>USART 初始化结构体详解</h3><p>标准库函数对每个外设都建立了一个初始化结构体，比如 USART_InitTypeDef，结构体成员用于设置外设工作参数，并由外设初始化配置函数，比如 USART_Init()调用，这些设定参数将会设置外设相应的寄存器，达到配置外设工作环境的目的。<br>初始化结构体和初始化库函数配合使用是标准库精髓所在，理解了初始化结构体每个<br>成员意义基本上就可以对该外设运用自如了。初始化结构体定义在stm32f10x_usart.h 文件中，初始化库函数定义在 stm32f10x_usart.c 文件中，编程时我们可以结合这两个文件内注<br>释使用。</p>
+<h4 id="初始化结构体代码如下"><a href="#初始化结构体代码如下" class="headerlink" title="初始化结构体代码如下"></a>初始化结构体代码如下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1 typedef struct </span><br><span class="line">2 &#123;</span><br><span class="line">3 uint32_t USART_BaudRate;// 波特率</span><br><span class="line">4 uint16_t USART_WordLength;// 字长</span><br><span class="line">5 uint16_t USART_StopBits;// 停止位</span><br><span class="line">6 uint16_t USART_Parity;// 校验位</span><br><span class="line">7 uint16_t USART_Mode;// USART 模式</span><br><span class="line">8 uint16_tUSART_HardwareFlowControl;// 硬件流控制 </span><br><span class="line">&#125;</span><br><span class="line">9 USART_InitTypeDef;</span><br></pre></td></tr></table></figure>
+<h4 id="USART-时钟初始化结构体"><a href="#USART-时钟初始化结构体" class="headerlink" title="USART 时钟初始化结构体"></a>USART 时钟初始化结构体</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 typedef struct &#123;</span><br><span class="line">2 uint16_t USART_Clock; // 时钟使能控制</span><br><span class="line">3 uint16_t USART_CPOL; // 时钟极性</span><br><span class="line">4 uint16_t USART_CPHA; // 时钟相位</span><br><span class="line">5 uint16_t USART_LastBit; // 最尾位时钟脉冲</span><br><span class="line">6 &#125; USART_ClockInitTypeD</span><br></pre></td></tr></table></figure>
+<h4 id="GPIO-和-USART-宏定义"><a href="#GPIO-和-USART-宏定义" class="headerlink" title="GPIO 和 USART 宏定义"></a>GPIO 和 USART 宏定义</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1 /**</span><br><span class="line">2 * 串口宏定义，不同的串口挂载的总线和 IO 不一样，移植时需要修改这几个宏</span><br><span class="line">3 */</span><br><span class="line">4 </span><br><span class="line">5 // 串口 1-USART1</span><br><span class="line">6 #define DEBUG_USARTx USART1</span><br><span class="line">7 #define DEBUG_USART_CLK RCC_APB2Periph_USART1</span><br><span class="line">8 #define DEBUG_USART_APBxClkCmd RCC_APB2PeriphClockCmd</span><br><span class="line">9 #define DEBUG_USART_BAUDRATE 115200</span><br><span class="line">10 </span><br><span class="line">11 // USART GPIO 引脚宏定义</span><br><span class="line">12 #define DEBUG_USART_GPIO_CLK (RCC_APB2Periph_GPIOA)</span><br><span class="line">13 #define DEBUG_USART_GPIO_APBxClkCmd RCC_APB2PeriphClockCmd</span><br><span class="line">14 </span><br><span class="line">15 #define DEBUG_USART_TX_GPIO_PORT GPIOA</span><br><span class="line">16 #define DEBUG_USART_TX_GPIO_PIN GPIO_Pin_9</span><br><span class="line">17 #define DEBUG_USART_RX_GPIO_PORT GPIOA</span><br><span class="line">18 #define DEBUG_USART_RX_GPIO_PIN GPIO_Pin_10</span><br><span class="line">19 </span><br><span class="line">20 #define DEBUG_USART_IRQ USART1_IRQn</span><br><span class="line">21 #define DEBUG_USART_IRQHandler USART1_IRQHandler</span><br></pre></td></tr></table></figure>
+<h2 id="下面是看正点原子所做的笔记"><a href="#下面是看正点原子所做的笔记" class="headerlink" title="下面是看正点原子所做的笔记"></a><strong>下面是看正点原子所做的笔记</strong></h2><p>学习STM32需要掌握库函数的基本配置方法。了解寄存器底层配置过程。基本外设包括GPIO输入输出，外部中断，定时器，串口。STM32最小系统包含供电复位时钟：外部晶振（两个），Boot启动模式选择，下载电路（串口/JTAG/SWD)，后备电池。USB串口有以下三个作用：</p>
+<h4 id="1-可以当串口使用"><a href="#1-可以当串口使用" class="headerlink" title="1.可以当串口使用"></a>1.可以当串口使用</h4><h4 id="2-如果USB串口连接到STM32的串口1（STM32ISP下载只能是串口1）的话，那么可以用串口下载程序"><a href="#2-如果USB串口连接到STM32的串口1（STM32ISP下载只能是串口1）的话，那么可以用串口下载程序" class="headerlink" title="2.如果USB串口连接到STM32的串口1（STM32ISP下载只能是串口1）的话，那么可以用串口下载程序"></a>2.如果USB串口连接到STM32的串口1（STM32ISP下载只能是串口1）的话，那么可以用串口下载程序</h4><h4 id="3-因为要连接到USB，所以可以用USB供电"><a href="#3-因为要连接到USB，所以可以用USB供电" class="headerlink" title="3.因为要连接到USB，所以可以用USB供电"></a>3.因为要连接到USB，所以可以用USB供电</h4><p>（包含CH340驱动安装方法）</p>
+<h4 id="如何新建STM32工程模板在trello中有详细的说明"><a href="#如何新建STM32工程模板在trello中有详细的说明" class="headerlink" title="如何新建STM32工程模板在trello中有详细的说明"></a>如何新建STM32工程模板在trello中有详细的说明</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://qinzhengchao.github.io/2019/02/15/the-first-passage/" data-id="cjsr9w5n30002mcuese2ywuup" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/02/27/title/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          the second passage
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/02/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/02/27/title/">the second passage</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/15/the-first-passage/">the first passage</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/05/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 qinzhengchao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
