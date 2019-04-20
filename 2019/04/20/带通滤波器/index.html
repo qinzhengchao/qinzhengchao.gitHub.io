@@ -16,8 +16,6 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器1.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器2.png">
-<meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器3.png">
-<meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器4.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器5.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器6.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器7.png">
@@ -25,7 +23,7 @@
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器9.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器10.png">
 <meta property="og:image" content="http://qinzhengchao.github.io/images/巴特沃斯滤波器11.png">
-<meta property="og:updated_time" content="2019-04-20T14:47:18.491Z">
+<meta property="og:updated_time" content="2019-04-20T14:55:23.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="带通滤波器">
 <meta name="twitter:description" content="this is the sixth passage of HEXOSEVO 实验室">
@@ -100,7 +98,7 @@
       
         <p>this is the sixth passage of HEXO<br>SEVO 实验室<br><a id="more"></a></p>
 <h1 id="带通滤波器"><a href="#带通滤波器" class="headerlink" title="带通滤波器"></a><strong>带通滤波器</strong></h1><h3 id="巴特沃斯滤波器"><a href="#巴特沃斯滤波器" class="headerlink" title="巴特沃斯滤波器"></a><strong>巴特沃斯滤波器</strong></h3><p>巴特沃斯滤波器的特点是通频带内的频率响应曲线最大限度平坦，没有起伏，而在阻频带则逐渐下降为零。 在振幅的对数对角频率的波特图上，从某一边界角频率开始，振幅随着角频率的增加而逐步减少，趋向负无穷大。<br>一阶巴特沃斯滤波器的衰减率为每倍频6分贝，每十倍频20分贝。二阶巴特沃斯滤波器的衰减率为每倍频12分贝、三阶巴特沃斯滤波器的衰减率为每倍频18分贝、如此类推。巴特沃斯滤波器的振幅对角频率单调下降，并且也是唯一的无论阶数，振幅对角频率曲线都保持同样的形状的滤波器。只不过滤波器阶数越高，在阻频带振幅衰减速度越快。其他滤波器高阶的振幅对角频率图和低级数的振幅对角频率有不同的形状。</p>
-<h5 id="设计步骤"><a href="#设计步骤" class="headerlink" title="设计步骤"></a><strong>设计步骤</strong></h5><p>如设计一个数字低通滤波器，其技术指标为：<br>通带临界频率fp ，通带内衰减小于rp；<br>阻带临界频率fs，阻带内衰减大于αs；采样频率为FS<br>1、将指标变为角频率 wp=fp<em>2</em>pi;ws= fs<em>2</em>pi;<br>2、将数字滤波器的频率指标{Wk}由wk=（2/T）tan（Wk/2）转换为模拟滤波器的频率指标{wk}，由于是用双线性不变法设计，故先采取预畸变。<br><img src="/images/巴特沃斯滤波器1.png" alt=""><br>3、将高通指标转换为低通指标，进而设计高通的s域模型<br>4、归一化处理<br><img src="/images/巴特沃斯滤波器2.png" alt=""><br><img src="/images/巴特沃斯滤波器3.png" alt=""><br><img src="/images/巴特沃斯滤波器4.png" alt=""><br>由以上三式计算出N，查表可得模拟低通滤波器的阶数，从而由下式确定模拟高通滤波器的参数。<br><img src="/images/巴特沃斯滤波器5.png" alt=""></p>
+<h5 id="设计步骤"><a href="#设计步骤" class="headerlink" title="设计步骤"></a><strong>设计步骤</strong></h5><p>如设计一个数字低通滤波器，其技术指标为：<br>通带临界频率fp ，通带内衰减小于rp；<br>阻带临界频率fs，阻带内衰减大于αs；采样频率为FS<br>1、将指标变为角频率 wp=fp<em>2</em>pi;ws= fs<em>2</em>pi;<br>2、将数字滤波器的频率指标{Wk}由wk=（2/T）tan（Wk/2）转换为模拟滤波器的频率指标{wk}，由于是用双线性不变法设计，故先采取预畸变。<br><img src="/images/巴特沃斯滤波器1.png" alt=""><br>3、将高通指标转换为低通指标，进而设计高通的s域模型<br>4、归一化处理<br><img src="/images/巴特沃斯滤波器2.png" alt=""><br>由以上三式计算出N，查表可得模拟低通滤波器的阶数，从而由下式确定模拟高通滤波器的参数。<br><img src="/images/巴特沃斯滤波器5.png" alt=""></p>
 <h5 id="仿真程序的设计与调试"><a href="#仿真程序的设计与调试" class="headerlink" title="仿真程序的设计与调试"></a><strong>仿真程序的设计与调试</strong></h5><p>数字域指标变换成模拟域指标<br>其程序为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fp = 400 fs= 300;</span><br><span class="line">Rp = 1; Rs = 20;</span><br><span class="line">wp =fp*2*pi;</span><br><span class="line">ws =fs*2*pi;</span><br><span class="line">FS=1000;T=1/FS；</span><br></pre></td></tr></table></figure></p>
 <p>程序执行结果为：wp=2.5133e+003 ws=1.8850e+003 与实际计算结果相符。</p>
 <h5 id="数字域频率进行预畸变"><a href="#数字域频率进行预畸变" class="headerlink" title="数字域频率进行预畸变"></a><strong>数字域频率进行预畸变</strong></h5><p>其程序为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wp2=2*tan（Wp/2）/T;</span><br><span class="line">ws2=2*tan（Ws/2）/T;</span><br><span class="line">经过预畸变，可以发现频率变为： wp2= 6.1554e+003</span><br><span class="line">ws2= 2.7528e+003</span><br></pre></td></tr></table></figure></p>
@@ -123,7 +121,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://qinzhengchao.github.io/2019/04/20/带通滤波器/" data-id="cjupmcthb000630uegp8w6njl" class="article-share-link">Share</a>
+      <a data-url="http://qinzhengchao.github.io/2019/04/20/带通滤波器/" data-id="cjupmkt0k0006a0ueb68hpei5" class="article-share-link">Share</a>
       
       
     </footer>
